@@ -32,7 +32,7 @@ def create_layer(init_nodes,n_nodes_this_layer,data):
 def train_neural_network(x):
 	
 	prediction = neural_network_model(x)
-	cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(logits = prediction, labels=y) )
+	cost = tf.reduce_mean( tf.nn.softmax_cross_entropy_with_logits(logits = prediction, labels = y) )
 	optimizer = tf.train.AdamOptimizer().minimize(cost)
 	hm_epochs = 10
 
