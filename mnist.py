@@ -12,8 +12,7 @@ batch_size = 100
 x = tf.placeholder('float',[None,784])
 y = tf.placeholder('float')
 
-def neural_network_model(data):
-	layer_out = None
+def neural_network_model(data):	
 	for i in range(len(all_nodes)):
 		if i == 0:			
 			layer_out = create_layer(start_val,all_nodes[i],data)
